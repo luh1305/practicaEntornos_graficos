@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicio 4 - Formularios HTML5</title>
+  <style>body{font-family:Arial,sans-serif;max-width:720px;margin:32px auto;padding:0 16px}fieldset{margin:18px 0;padding:18px;border:1px solid #bbb;border-radius:8px}label{display:block;margin-bottom:8px}input{display:block;margin:4px 0 10px;padding:7px}button{padding:8px 14px}</style>
+</head>
+<body>
+  <h1>Ejercitación 4: Formularios HTML5</h1>
+  <p>Cada formulario es independiente. Probá dejar campos vacíos o poner valores incorrectos y presioná «Validar».</p>
+  <fieldset><legend>4.A - Campo requerido</legend>
+    <form onsubmit="event.preventDefault(); alert('Campo requerido válido');">
+      <label for="nombre">Nombre (obligatorio)</label>
+      <input id="nombre" name="nombre" type="text" required>
+      <button type="submit">Validar</button>
+    </form>
+  </fieldset>
+  <fieldset><legend>4.B - Correo electrónico</legend>
+    <form onsubmit="event.preventDefault(); alert('Correo válido');">
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" required placeholder="usuario@ejemplo.com">
+      <button type="submit">Validar</button>
+    </form>
+  </fieldset>
+  <fieldset><legend>4.C - Fecha</legend>
+    <form onsubmit="event.preventDefault(); alert('Fecha seleccionada');">
+      <label for="fecha">Elegí una fecha</label>
+      <input id="fecha" name="fecha" type="date" required>
+      <button type="submit">Validar</button>
+    </form>
+  </fieldset>
+  <fieldset><legend>4.D - Color</legend>
+    <form onsubmit="event.preventDefault(); alert('Color seleccionado: '+document.getElementById('color').value);">
+      <label for="color">Elegí un color</label>
+      <input id="color" name="color" type="color" value="#3366cc" required>
+      <button type="submit">Validar</button>
+    </form>
+  </fieldset>
+  <fieldset><legend>4.E - Número, mínimo y máximo</legend>
+    <form onsubmit="event.preventDefault(); alert('Número dentro del rango');">
+      <label for="numero">Número de 1 a 10</label>
+      <input id="numero" name="numero" type="number" min="1" max="10" step="1" required>
+      <button type="submit">Validar</button>
+    </form>
+  </fieldset>
+  <p>La validación se realiza en el navegador: no se envían datos a un servidor.</p>
+</body>
+</html>
