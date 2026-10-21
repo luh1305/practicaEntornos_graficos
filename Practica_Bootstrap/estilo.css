@@ -1,0 +1,27 @@
+
+.contenedor {
+  background-color: #cfe2ff;   /* color de fondo cualquiera */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.bloque {
+  min-height: 70px;
+  padding: .75rem;
+}
+.bloque-violeta { background-color: #a67ea8; min-height: 110px; }
+.bloque-rosa    { background-color: #f4d9d0; min-height: 70px; }
+.bloque-verde   { background-color: #69cd84; min-height: 60px; }
+.bloque-gris    { background-color: #9d8d96; min-height: 60px; }
+.bloque-azul    { background-color: #7c9dcb; min-height: 140px; }
+
+
+.bloque-lateral { height: 100%; }
+
+.bloque-ej1        { min-height: 60px; }
+.bloque-ej1-beige  { background-color: #f9e6d9; }
+.bloque-ej1-rosa   { background-color: #e0b1b1; }
+
+
+.carousel-item img { height: 220px; object-fit: cover; }
